@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-bg-default);
+    line-height: 1.6;
+}
+
+
+h1 {
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-lg);
+}
+
+h2 {
+    margin: var(--spacing-lg) 0 var(--spacing-md) 0;
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+}
+
+
+/* Button component */
+
+button.btn {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    cursor: pointer;
+
+    font-weight: var(--font-weight-bold);
+    height: 40px;
+}
+
+button.btn:focus {
+    outline: 2px solid var(--color-border-focus);
+    outline-offset: 1px;
+}
+
+
+button.btn-primary {
+    background-color: var(--color-fg-control-default);
+    color: var(--color-fg-reverse);
+    border-radius: var(--border-radius-sm);
+    padding: var(--space-00) var(--space-16);
+    border: 2px solid var(--color-fg-control-default);
+}
+
+button.btn-primary:hover {
+    background-color: var(--color-fg-control-hover);
+}
+
+button.btn-primary:active {
+    background-color: var(--color-fg-control-active);
+}
+
+button.btn-primary:disabled {
+    background-color: var(--color-disabled);
+    border: 2px solid var(--color-disabled);
+    cursor: not-allowed;
+}
+
+button.btn-secondary {
+    background-color: var(--color-bg-transparent);
+    color: var(--color-fg-control-default);
+    border-radius: var(--border-radius-sm);
+    padding: var(--space-00) var(--space-16);
+    border: 2px solid var(--color-fg-control-default);
+}
+
+button.btn-secondary:hover {
+    color: var(--color-fg-control-hover);
+    border: 2px solid var(--color-fg-control-hover);
+}
+
+button.btn-secondary:active {
+    color: var(--color-fg-control-active);
+    border: 2px solid var(--color-fg-control-active);
+}
+
+button.btn-secondary:disabled {
+    color: var(--color-disabled);
+    border: 2px solid var(--color-disabled);
+    cursor: not-allowed;
+}
